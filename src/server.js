@@ -2,6 +2,7 @@ require("dotenv").config();
 const express = require("express");
 const app = express();
 const PORT = process.env.PORT;
+const sequelize = require("./util/database");
 
 const connectDB = require("./util/database");
 
