@@ -1,0 +1,2 @@
+https://github.com/tkssharma/Sequelize-Tutorials-Node-JS-ORM
+https://levelup.gitconnected.com/build-an-express-api-with-sequelize-cli-and-express-router-963b6e274561
