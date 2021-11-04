@@ -2,9 +2,12 @@ require("dotenv").config();
 const express = require("express");
 const app = express();
 const PORT = process.env.PORT;
-const logger = require("morgan");
 const { User } = require("./models");
-app.use(logger("dev"));
+if (process.env.NODE_ENV !== "production") {
+    const logger = require("morgan");
+    app.use(logger("dev"));
+}
+
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
